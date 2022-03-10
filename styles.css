@@ -175,6 +175,10 @@
 .colThree {
   width: 347px;
 }
+.colTwo a > i {
+  color: #fff;
+  margin-right: 10px;
+}
 .colOne h3 {
   color: #fff;
   margin-bottom: 20px;
