@@ -5,6 +5,11 @@ let dropBtn = document.querySelector(".dropbtn");
 let menuItems = document.querySelector(".dropdown-content");
 let here = document.querySelector(".here");
 let shown = document.querySelector(".shown");
+let logo = document.getElementById("logo");
+
+logo.addEventListener("click", () => {
+  window.location = "https://the-dubai-life.com";
+});
 
 if (menuBtn) {
   menuBtn.addEventListener("click", () => {
