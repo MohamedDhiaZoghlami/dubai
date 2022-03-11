@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/269999f8cf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="logo.png">
@@ -50,7 +51,45 @@
             </div>
         </div>
     </nav>
-    <div class="test"></div>
+    <div class="header">
+        <h1>Immobilier à Dubai</h1>
+    </div>
+    <div class="formulaire">
+        <div class="col-1">
+            <form autocomplete="off">
+                <div class="line">
+                    <input type="text" placeholder="Votre Nom" id="name">
+                    <input type="email" placeholder="Email" id="email">
+                </div>
+                <div class="line">
+                    <input type="phone" placeholder="Votre Télephone" id="phone">
+                    <input type="text" placeholder="Adresse de la Rue" id="street">
+                </div>
+                <div class="line">
+                    <input type="text" placeholder="Cité" id="city">
+                    <input type="text" placeholder="Etat / Provenance" id="state">
+                </div>
+                <div class="line">
+                    <input type="text" placeholder="Pays" id="country">
+                    <img src="ticket.png" alt="ticket">
+                    <input type="text" placeholder="Code Postal" id="zipCode">
+                </div>
+                <div class="line-2">
+                    <input type="number" placeholder="Tickets" id="ticket">
+                    <p class="ticketPara">Vous avez <span class="tickets"></span> !</p>
+                    <p class="pricePara">Payez : &euro;<span class="price"></span> <span class="finalPrice"></span> </p>
+                </div>
+                <div class="line-2" id="btn">
+                    <button id="submitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-2">
+            <video autoplay muted loop id="myVideo">
+                <source src="vid1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footerContainer">
             <div class="colOne">
@@ -92,19 +131,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="source.js"></script>
+     <script src="source.js"></script>
 </body>
 </html>
