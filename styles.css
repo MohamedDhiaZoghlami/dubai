@@ -8,7 +8,8 @@ h3::selection,
 p::selection,
 a::selection,
 button::selection,
-span::selection {
+span::selection,
+h1::selection {
   color: #fff;
   background-color: #d1a046;
 }
@@ -498,6 +499,11 @@ span {
 }
 
 @media screen and (max-width: 500px) {
+  .formulaire {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
   .line {
     flex-direction: column;
   }
@@ -514,5 +520,87 @@ span {
   .header {
     font-size: 25px;
     padding: 30px;
+  }
+}
+/*===================================notif================================*/
+.notification {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000000;
+}
+.notifCard {
+  width: 250px;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+#closeModel {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 20px;
+  color: #d1a046;
+  cursor: pointer;
+}
+/*============================Payment success page=========================================================*/
+.headers {
+  background: linear-gradient(rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.8) 100%),
+    url("/header.jpeg");
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+}
+.columnOne {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jjj {
+  height: 6px;
+  width: 168px;
+  background-color: #d1a046;
+}
+.columnTwo {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  align-items: center;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .headers {
+    flex-direction: column;
+  }
+  .columnOne {
+    width: 90%;
+    /* height: 50%; */
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+  }
+  .jjj {
+    width: 100%;
+  }
+  .columnTwo {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
   }
 }

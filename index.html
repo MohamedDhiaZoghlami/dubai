@@ -14,6 +14,12 @@
     <title>Immobilier - The Dubai Life</title>
 </head>
 <body>
+    <div class="notification">
+        <div class="notifCard">
+            <i class="fa-solid fa-xmark" id="closeModel"></i>
+            <p class="notifMsg"></p>
+        </div>
+    </div>
     <nav class="navbar">
         <div class="navbar--container">
             <div class="navbar__logo">
@@ -51,36 +57,41 @@
             </div>
         </div>
     </nav>
-    <div class="header">
-        <h1>Immobilier à Dubai</h1>
+    <div class="headers">
+        <div class="columnOne">
+            <div class="jjj"></div>
+        </div>
+        <div class="columnTwo">
+            <h1>Immobilier à Dubai</h1>
+        </div>
     </div>
     <div class="formulaire">
         <div class="col-1">
-            <form autocomplete="off">
+            <form autocomplete="off" name="myForm" >
                 <div class="line">
-                    <input type="text" placeholder="Votre Nom" id="name">
-                    <input type="email" placeholder="Email" id="email">
+                    <input type="text" placeholder="Votre Nom" id="name" name="fullName" required>
+                    <input type="email" placeholder="Email" id="email" name="email" required >
                 </div>
                 <div class="line">
-                    <input type="phone" placeholder="Votre Télephone" id="phone">
-                    <input type="text" placeholder="Adresse de la Rue" id="street">
+                    <input type="phone" placeholder="Votre Télephone" id="phone" name="phone" required>
+                    <input type="text" placeholder="Adresse de la Rue" id="street" name="street" required>
                 </div>
                 <div class="line">
-                    <input type="text" placeholder="Cité" id="city">
-                    <input type="text" placeholder="Etat / Provenance" id="state">
+                    <input type="text" placeholder="Cité" id="city" name="city" required>
+                    <input type="text" placeholder="Etat / Provenance" id="state" name="state" required>
                 </div>
                 <div class="line">
-                    <input type="text" placeholder="Pays" id="country">
+                    <input type="text" placeholder="Pays" id="country" name="country" required>
                     <img src="ticket.png" alt="ticket">
-                    <input type="text" placeholder="Code Postal" id="zipCode">
+                    <input type="text" placeholder="Code Postal" id="zipCode" name="zipCode" required>
                 </div>
                 <div class="line-2">
-                    <input type="number" placeholder="Tickets" id="ticket">
+                    <input type="number" placeholder="Tickets" id="ticket" name="ticket" required min="1">
                     <p class="ticketPara">Vous avez <span class="tickets"></span> !</p>
                     <p class="pricePara">Payez : &euro;<span class="price"></span> <span class="finalPrice"></span> </p>
                 </div>
                 <div class="line-2" id="btn">
-                    <button id="submitBtn">Submit</button>
+                    <button id="submitBtn" type="submit">Submit</button>
                 </div>
             </form>
         </div>
